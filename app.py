@@ -13,10 +13,6 @@ def hello_world():
 def about_me():
     return render_template("about_me.html")
 
-@app.route("/about")
-def about_me():
-    return render_template("about_me.html")
-
 def todays_date():
     today = date.today()
     str_date = today.strftime("%B %d %Y")
